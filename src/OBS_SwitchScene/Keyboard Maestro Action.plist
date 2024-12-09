@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Name</key>
+    <string>Switch scene in OBS</string>
+    <key>Script</key>
+    <string>Action.sh</string>
+    <key>Icon</key>
+    <string>Icon.png</string>
+    <key>Title</key>
+    <string>Switch scene in OBS</string>
+    <key>Results</key>
+    <string>None|Window|Briefly|Variable|Clipboard</string>
+    <key>Timeout</key>
+    <integer>120</integer>
+    <key>Author</key>
+    <string>Ben Vanderberg</string>
+    <key>Help</key>
+    <string>This action uses obs-cmd CLI to switch scene in OBS</string>
+    <key>Parameters</key>
+    <array>
+      <dict>
+        <key>Label</key>
+        <string>Scene</string>
+        <key>Type</key>
+        <string>TokenString</string>
+        <key>Default</key>
+        <string>SCENE1</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
