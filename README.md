@@ -46,15 +46,33 @@ Starts or stops the virtual camera in OBS.
 - macOS
 - [Keyboard Maestro](https://www.keyboardmaestro.com/main/)
 - [OBS Studio](https://obsproject.com/)
-- [Homebrew](https://brew.sh/)
 - [obs-cmd](https://github.com/grigio/obs-cmd)
+
+## OBS WebSocket Configuration
+
+Before using these plugins, you need to enable and configure the OBS WebSocket server:
+
+1. Open OBS Studio
+2. Go to Tools > WebSocket Server Settings
+3. Enable the WebSocket server
+4. Configure the following settings:
+   - Server Port: 4455 (default)
+   - Enable Authentication: Optional (recommended for security)
+   - Password: Set a secure password if authentication is enabled
+5. Click "Apply" and "OK"
+
+Note: If you enable authentication, you'll need to set the `OBS_WEBSOCKET_PASSWORD` environment variable with your password before using obs-cmd.
 
 ## Installation
 
 First you need to install the dependent libraries in order for it to work.
 1. Open your Terminal.
 2. To install Homebrew, run the following command `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` per instructions from [Homebrew](https://brew.sh/).
-3. Install obs-cmd by running the command `brew install obs-cmd`.
+3. Download and install obs-cmd:
+   - Visit [obs-cmd releases](https://github.com/grigio/obs-cmd/releases)
+   - Download the latest release for macOS
+   - Extract the binary and place it in a directory in your PATH (e.g., `/usr/local/bin/`)
+   - Make the binary executable by running `chmod +x /path/to/obs-cmd`
 
 ### Install the plugins in Keyboard Maestro.
 
